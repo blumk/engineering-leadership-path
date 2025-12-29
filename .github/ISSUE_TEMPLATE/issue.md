@@ -1,3 +1,8 @@
+---
+name: General Issue
+about: Create a new issue
+---
+
 ## Summary
 What’s the issue or request?
 
