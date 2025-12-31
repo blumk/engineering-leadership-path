@@ -89,6 +89,7 @@ function RoadmapCard({ roadmap }: { roadmap: Roadmap }) {
       className="group relative overflow-hidden rounded-2xl border border-white/10 bg-[#151515] transition-all duration-300 hover:border-white/20 hover:bg-[#1a1a1a]"
       onMouseEnter={() => setIsExpanded(true)}
       onMouseLeave={() => setIsExpanded(false)}
+      onClick={() => setIsExpanded((prev) => !prev)}
     >
       <div
         className={`absolute inset-x-0 top-0 h-1 bg-gradient-to-r ${roadmap.gradient}`}
@@ -127,7 +128,8 @@ function RoadmapCard({ roadmap }: { roadmap: Roadmap }) {
 
         <Link
           href={roadmap.href}
-          className="mt-6 flex items-center text-sm font-medium text-gray-500 group-hover:text-white transition-colors"
+          onClick={(e) => e.stopPropagation()}
+          className="mt-6 inline-flex items-center text-sm font-medium text-gray-500 group-hover:text-white transition-colors"
         >
           Explore roadmap
           <svg
