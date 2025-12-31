@@ -14,7 +14,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Engineering Leadership Path",
-  description: "Engineering Leadership Path",
+  description:
+    "Interactive roadmaps to guide your journey from Engineering Manager to Director. Learn the skills, frameworks, and mindsets that distinguish great engineering leaders.",
 };
 
 export default function RootLayout({
